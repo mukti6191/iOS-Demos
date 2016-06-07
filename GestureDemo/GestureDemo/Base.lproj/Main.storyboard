@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG8-MC-AHQ">
+                                <rect key="frame" x="20" y="28" width="270" height="266"/>
+                                <color key="backgroundColor" red="1" green="0.2031620921" blue="0.051201094510000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8R-T5-vW1">
+                                <rect key="frame" x="310" y="28" width="270" height="266"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjx-Pn-xLZ">
+                                <rect key="frame" x="310" y="314" width="270" height="266"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8NE-MB-M02" appends="YES" id="nG9-cw-D2s"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rk3-Av-di8">
+                                <rect key="frame" x="20" y="314" width="270" height="266"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UG8-MC-AHQ" firstAttribute="height" secondItem="i8R-T5-vW1" secondAttribute="height" id="4il-fI-XwL"/>
+                            <constraint firstItem="UG8-MC-AHQ" firstAttribute="width" secondItem="i8R-T5-vW1" secondAttribute="width" id="518-Vg-fWq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i8R-T5-vW1" secondAttribute="trailing" id="7si-Kf-300"/>
+                            <constraint firstItem="xjx-Pn-xLZ" firstAttribute="width" secondItem="Rk3-Av-di8" secondAttribute="width" id="8Ng-Ft-20f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xjx-Pn-xLZ" secondAttribute="trailing" id="92T-Ak-Gb8"/>
+                            <constraint firstItem="xjx-Pn-xLZ" firstAttribute="leading" secondItem="Rk3-Av-di8" secondAttribute="trailing" constant="20" id="GVR-LW-1bR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rk3-Av-di8" secondAttribute="bottom" constant="20" id="HT7-3V-VbB"/>
+                            <constraint firstItem="UG8-MC-AHQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IQW-h3-Xeg"/>
+                            <constraint firstItem="xjx-Pn-xLZ" firstAttribute="height" secondItem="Rk3-Av-di8" secondAttribute="height" id="KAY-f9-EX8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xjx-Pn-xLZ" secondAttribute="bottom" constant="20" id="Ovr-77-kyP"/>
+                            <constraint firstItem="Rk3-Av-di8" firstAttribute="top" secondItem="UG8-MC-AHQ" secondAttribute="bottom" constant="20" id="PVF-oW-ogt"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Rk3-Av-di8" secondAttribute="leading" id="VhP-gB-bUc"/>
+                            <constraint firstItem="i8R-T5-vW1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="b2w-zX-HT0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="UG8-MC-AHQ" secondAttribute="leading" id="dNb-bb-VWU"/>
+                            <constraint firstItem="i8R-T5-vW1" firstAttribute="leading" secondItem="UG8-MC-AHQ" secondAttribute="trailing" constant="20" id="gg5-AC-mvD"/>
+                            <constraint firstItem="xjx-Pn-xLZ" firstAttribute="top" secondItem="i8R-T5-vW1" secondAttribute="bottom" constant="20" id="oCG-hK-l59"/>
+                            <constraint firstItem="i8R-T5-vW1" firstAttribute="height" secondItem="xjx-Pn-xLZ" secondAttribute="height" id="tHV-fx-89X"/>
+                            <constraint firstItem="i8R-T5-vW1" firstAttribute="width" secondItem="xjx-Pn-xLZ" secondAttribute="width" id="yHY-s2-asT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="UG8-MC-AHQ" id="br7-dZ-mJU"/>
+                        <outlet property="view2" destination="i8R-T5-vW1" id="8MV-h1-5zk"/>
+                        <outlet property="view3" destination="Rk3-Av-di8" id="U1L-NQ-kSG"/>
+                        <outlet property="view4" destination="xjx-Pn-xLZ" id="TIu-B2-37X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="3" id="8NE-MB-M02">
+                    <connections>
+                        <action selector="view4Tapped:" destination="BYZ-38-t0r" id="cnm-hk-Ggz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="380" y="312"/>
+        </scene>
+    </scenes>
+</document>
