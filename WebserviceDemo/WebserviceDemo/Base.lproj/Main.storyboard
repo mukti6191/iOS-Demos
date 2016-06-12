@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Start to Download" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F83-Lc-SB9">
+                                <rect key="frame" x="20" y="282" width="560" height="36"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1PW-ua-MIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgH-t2-9fu">
+                                <rect key="frame" x="283" y="345" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startPauseButtomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxb-ij-bwN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F83-Lc-SB9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0aQ-R9-TE1"/>
+                            <constraint firstItem="mgH-t2-9fu" firstAttribute="top" secondItem="F83-Lc-SB9" secondAttribute="bottom" constant="27" id="MfX-Bn-PpQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F83-Lc-SB9" secondAttribute="trailing" id="PWZ-Mv-wpg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="F83-Lc-SB9" secondAttribute="leading" id="Wss-mA-Nht"/>
+                            <constraint firstItem="mgH-t2-9fu" firstAttribute="centerX" secondItem="F83-Lc-SB9" secondAttribute="centerX" id="tAq-1W-eGY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="mgH-t2-9fu" id="jZD-67-24K"/>
+                        <outlet property="lblPercentageDone" destination="F83-Lc-SB9" id="DJ2-cp-DJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="349"/>
+        </scene>
+    </scenes>
+</document>

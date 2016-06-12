@@ -22,6 +22,8 @@
     isMenuOpen = NO;
 }
 
+-
+
 -(IBAction)menuButtonClicked:(id)sender {
     if (isMenuOpen) {
         [myCustomView hideMenuView];

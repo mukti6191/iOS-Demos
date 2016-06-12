@@ -20,11 +20,20 @@
 }
 
 -(void) showMenuView {
+    [self.superview layoutIfNeeded];
     xConstraint.constant = 0;
+    [UIView animateWithDuration:1.0 animations:^{
+        [self.superview layoutIfNeeded];
+    }];
 }
 
 -(void) hideMenuView {
+    
+    [self.superview layoutIfNeeded];
     xConstraint.constant = - self.frame.size.width;
+    [UIView animateWithDuration:1.0 animations:^{
+        [self.superview layoutIfNeeded];
+    }];
 }
 
 /*
